@@ -33,7 +33,7 @@ public class MessageController {
     }
 
     @GetMapping("/{questionId}")
-    public ResponseEntity getAllQuestions(@PathVariable("questionId") Long questionId) throws RecordNotFoundException {
+    public ResponseEntity getThread(@PathVariable("questionId") Long questionId) throws RecordNotFoundException {
         return ResponseEntity.status(HttpStatus.OK).body(service.getThread(questionId));
     }
 }

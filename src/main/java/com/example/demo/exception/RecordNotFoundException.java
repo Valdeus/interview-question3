@@ -1,6 +1,6 @@
 package com.example.demo.exception;
 
-public class RecordNotFoundException extends Exception {
+public class RecordNotFoundException extends RuntimeException {
     public RecordNotFoundException(String msg) {
         super(msg);
     }
